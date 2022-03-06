@@ -1,10 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-:root{
-    font-family: 'Poppins', sans-serif;
-    font-size: 62.5%;
+
+div.name-wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+div.name{
+    position: absolute;
+    padding: 100px;
+    /* border: 2px solid red; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.name h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.class_001{
+    border: none;
+    outline: none;
+}
+
+input[type="text"]{
+    border-bottom: 1px solid rgb(77, 77, 77);
+    padding: 5px 0;
+    width: 100%;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+#btn-001{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+.container{
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.score{
+    display: flex;
+}
+
+.box{
+    width: 50%;
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+.score_lable{
+    margin-bottom: 20px;
+}
+
+.number{
+    font-size: 60px;
+}
+
+.choose_wrapper{
+    text-align: center;
+}
+
+#id_002{
+    margin-bottom: 50px;
+}
+#id_003{
+    margin-top: 80px;
+}
+
+.user_input_game{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin: auto;
+
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .score_lable{
+        font-size: 20px;
+    }
+    .user_input_game{
+        width: 100%;
+    }
+    div.name{
+        position: absolute;
+        padding: 0;
+    }
 }

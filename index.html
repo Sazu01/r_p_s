@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
     <script src="./app.js" defer></script>
-    <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello world</h1>
+
+    <div class="name-wrapper">
+        <div class="name">
+            <h1>Enter your name</h1>
+            <form action="">
+                <input type="text" name="" id="Name_input" placeholder="Sazu" class="class_001">
+                <input type="submit" value="Start" id="btn-001" class="class_001">
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="score">
+            <div class="computer_score_box box">
+                <h1 class="score_lable">Computer</h1>
+                <h1 class="number">0</h1>
+            </div>
+            <div class="user_score_box box">
+                <h1 class="score_lable" id="user_name_html">User</h1>
+                <h1 class="number">0</h1>
+            </div>
+        </div>
+
+        <div class="game">
+            <div class="choose_wrapper">
+                <h1 id="id_002">Choose</h1>
+            </div>
+            <div class="user_input_game">
+                <button class="btn class_001">Rock</button>
+                <button class="btn class_001">Paper</button>
+                <button class="btn class_001">Scissors</button>
+            </div>
+            <div class="computer_result choose_wrapper hide">
+                <h1 id="id_003">Coumputer : Rock</h1>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
